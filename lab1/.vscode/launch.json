@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/user/Desktop/601-31/lab1",
-      "program": "/home/user/Desktop/601-31/lab1/build/Debug/outDebug",
+      "cwd": "/home/user/Desktop/601-31/kozlov/Laboratornie/lab1",
+      "program": "/home/user/Desktop/601-31/kozlov/Laboratornie/lab1/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
