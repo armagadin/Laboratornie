@@ -6,11 +6,11 @@ void fill(int n, int a[])
 {
     int i;
     for (i = 0; i < n; i++)
-        a[i] = rand () % 101 - 50;
+        a[i] = rand () % 101 - 100;
 }
 
 int main()
-{ int max1, max2, max3, ind1, ind2, ind3;
+{ int max1, max2, max3, ind1, ind2, ind3, a, b, f;
 
     srand(time(NULL));
     int n;
@@ -25,20 +25,38 @@ max2 = -102;
 max3 = -103;
  for (i = 0; i < n; i++)
  {
-    if (arr[i] > max1)
+    if (A[i] > max1)
+   { 
     max3 = max2;
     ind3 = ind2;
     max2 = max1;
     ind2 = ind1;
-    max1 = arr[i];
+    max1 = A[i];
     ind1 = i;
- }
-        
-        
-        
-        
-        printf("%4d", A[i]);
-    printf("\n");
-    return 0;
+    }
+    if (A[i] > max2 && A[i]< max1)
+    {
+    max3 = max2;
+    ind3 = ind2;
+    max2 = A[i];
+    ind2 = i;
+    }
+    if (A[i] > max3 && A[i]< max2)
+
+    { 
+    max3 = A[i];
+    ind3 = i; 
+    }
 }
+        
+      a = max1 * max2 * max3;
+        b = abs( ind1 + ind2 + ind3 );
+        f = a - b;
+
+    
+    printf("%d" , f );
+}
+
+
+
 
